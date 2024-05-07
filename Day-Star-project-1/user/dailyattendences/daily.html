@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Attendance Track</title>
+    <link rel="stylesheet" href="/user/dailyattendences/attendence.css">
+</head>
+<body>
+    <h1>Daily Attendance Track</h1>
+
+    <div class="form-container">
+        <h2>Children Attendance</h2>
+        <form id="children-form">
+            <label for="child-name">Name:</label>
+            <input type="text" id="child-name">
+            <label for="child-id">Baby Number:</label>
+            <input type="text" id="child-id">
+            <label for="child-time-in">Time In:</label>
+            <input type="time" id="child-time-in">
+            <label for="child-time-out">Time Out:</label>
+            <input type="time" id="child-time-out">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Staff Attendance</h2>
+        <form id="staff-form">
+            <label for="staff-name">Name:</label>
+            <input type="text" id="staff-name">
+            <label for="staff-id">ID Number:</label>
+            <input type="text" id="staff-id">
+            <label for="staff-time-in">Time In:</label>
+            <input type="time" id="staff-time-in">
+            <label for="staff-time-out">Time Out:</label>
+            <input type="time" id="staff-time-out">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Security Attendance</h2>
+        <form id="security-form">
+            <label for="security-name">Name:</label>
+            <input type="text" id="security-name">
+            <label for="security-id">ID Number:</label>
+            <input type="text" id="security-id">
+            <label for="security-time-in">Time In:</label>
+            <input type="time" id="security-time-in">
+            <label for="security-time-out">Time Out:</label>
+            <input type="time" id="security-time-out">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="/dailyattendance/track.js"></script>
+</body>
+</html>
+

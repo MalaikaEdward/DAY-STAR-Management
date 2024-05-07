@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(
+      content="width=device-width, initial-scale=1.0" 
+      name="viewport"
+      )
+    title Register baby
+    link(
+      href="/css/register.css" 
+      rel="stylesheet"
+      )
+  body
+    .container
+      h2 Baby Register form
+      form(
+        method="POST" 
+        action="/babiesupdate?id='+baby._id"
+        )
+        .form-group
+          label(for="name") Baby's Name:
+          input#name(
+            name="babyName" 
+            type="text"
+            value=baby.name
+            )
+        .form-group
+          label(for="age") Baby's Age:
+          input#age(
+            name="age" 
+            type="number"
+            value=baby.age
+            )
+        .form-group
+          label(for="gender") Baby's Gender:
+          select#gender(
+            name="babygender"
+            )
+            
+            option(value="male" selected= baby.gender==="male") Male
+            option(value="female" selected= baby.gender==="female") Female
+            option(value="other" selected= baby.gender==="other") Other
+        .form-group
+          label(for="parentNames") Parent's Names:
+          input#parentNames(
+            name="fatherNames" 
+            type="text"
+            value=baby.fatherNames
+            )
+        .form-group
+          label(for="parentContact") Parent's Contact:
+          input#parentContact(
+            name="fatherContact" 
+            type="text"
+            value=baby.fatherContact
+            )
+        .form-group
+          label(for="feePaid") Fee Paid (UGX):
+          input#feePaid(
+            name="schoolfeePaid" 
+            type="number"
+            )
+        .form-group
+          label(for="periodOfStay") Period of Stay:
+          input#periodOfStay(
+            name="babyperiodOfStay" 
+            type="text"
+            value=baby.babyperiodOfStay
+            )
+        .form-group
+          label(for="childNumber") Child Number:
+          input#childNumber(
+            name="babychildNumber" 
+            type="number"
+            value=baby.babychildNumber
+            )
+        .form-group
+          label(for="location") Location:
+          input#location(
+            name="address" 
+            type="text"
+            value=baby.address
+            )
+        button.btn(type="login" value"babyregister") Submit
+        script(src="/js/registration")

@@ -1,0 +1,17 @@
+.navbar navbar-expand-lg bg-body-tertiary {
+    text-align: right;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: none;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+}

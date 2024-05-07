@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Daycare Check-in Form
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css")
+  body
+    .container
+      h1.text-center.mt-5 Daycare Check-in Form
+      form(action="#" method="POST" class="mt-5")
+        .mb-3
+          label(for="childName" class="form-label") Child's Name
+          input(type="text" class="form-control" id="childName" placeholder="Enter child's name" required)
+        .mb-3
+          label(for="parentName" class="form-label") Parent's Name
+          input(type="text" class="form-control" id="parentName" placeholder="Enter parent's name" required)
+        .mb-3
+          label(for="contactNumber" class="form-label") Contact Number
+          input(type="tel" class="form-control" id="contactNumber" placeholder="Enter contact number" required)
+        .mb-3
+          label(for="checkInTime" class="form-label") Check-in Time
+          input(type="time" class="form-control" id="checkInTime" required)
+        .mb-3
+          label(for="checkInDate" class="form-label") Check-in Date
+          input(type="date" class="form-control" id="checkInDate" required)
+        .mb-3
+          label(for="guardianCode" class="form-label") Guardian Code
+          input(type="password" class="form-control" id="guardianCode" placeholder="Enter guardian code" required)
+        button(type="submit" class="btn btn-primary") Submit

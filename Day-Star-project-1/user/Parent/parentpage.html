@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Login</title>
+    <link rel="stylesheet" href="/user/Parent/child.css">
+        
+</head>
+<body>
+    <div class="navbar" w3-include-html="/include-navbar/navbar.html"></div>
+    <div class="container">
+        <h2>Parent Login</h2>
+        <form id="loginForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div id="error" class="error"></div>
+        </form>
+
+        <div class="time-card">
+            <div>
+                <label for="timeIn">Time In:</label>
+                <input type="text" id="timeIn" name="timeIn" value="00:00">
+            </div>
+            <div>
+                <label for="timeOut">Time Out:</label>
+                <input type="text" id="timeOut" name="timeOut" value="00:00">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">&copy; 2024 DayStar. All Rights Reserved.</footer>
+    <script src="/Parent/parent2.js"></script>
+    <script src="/include-navbar/include.js"></script>
+</body>
+</html>

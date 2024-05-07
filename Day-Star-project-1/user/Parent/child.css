@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('/images/images/PARENT.jpg'); /* Replace 'background_image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body full height */
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: none;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  color: #5dc2d9;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn {
+  background-color: #27982b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+.time-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.time-card label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.time-card input[type="text"] {
+  width: 45%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #333; /* Background color of the footer */
+  color: #fff; /* Text color of the footer */
+  text-align: center;
+  padding: 20px 0; /* Padding top and bottom */
+  margin-top: auto; /* Pushes the footer to the bottom */
+  font-size: small;
+  font-weight: bolder;
+  font-style: oblique;
+  font-display: 4px;
+}

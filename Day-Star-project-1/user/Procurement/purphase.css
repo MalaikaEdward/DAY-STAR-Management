@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/images/pd.jpg'); /* Replace 'background_image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure that the content takes at least the height of the viewport */
+  }
+  .container {
+    height: 40px;
+    width: 500px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  select, input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="file"] {
+    padding-top: 5px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: none;
+    color: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color of the footer */
+    text-align: center;
+    padding: 20px 0; /* Padding top and bottom */
+    margin-top: auto; /* Pushes the footer to the bottom */
+    font-size: small;
+    font-weight: bolder;
+    font-style: oblique;
+    font-display: 4px;
+}

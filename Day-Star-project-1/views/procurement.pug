@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(
+      content="width=device-width, initial-scale=1.0" 
+      name="viewport"
+      )
+    title Purchase Form
+    link(
+      href="/css/purphase.css" 
+      rel="stylesheet"
+      )
+  body
+    .navbar(w3-include-html="/include-navbar/navbar.html")
+    .container
+      h2 Purchase Form
+      form#purchaseForm
+        .form-group
+          label(for="itemName") Item Name:
+          select#itemName
+            option(value="fruits") Fruits
+            option(value="milk") Milk
+            option(value="diapers") Diapers
+            option(value="dolls") Dolls
+        .form-group
+          label(for="quantity") Quantity:
+          input#quantity(
+            step="1" 
+            min="1" 
+            type="number"
+            )
+          select#unit
+            option(value="ltr") ltr
+            option(value="kg") kg
+            option(value="pcs") pcs
+        .form-group
+          label(for="itemImage") Upload Image of the Item:
+          input#itemImage(
+            accept="image/*" 
+            type="file"
+            )
+        button(
+          onclick="submitForm()" 
+          type="button"
+          ) Submit
+    footer.footer © 2024 DayStar. All Rights Reserved.
+    script(src="/Procurement/cash.js")
+    script(src="/include-navbar/include.js")

@@ -1,0 +1,50 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            /* background-color: #000000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make the body full height */
+            background-image: url('/images/images/MS.jpg'); /* Replace 'background_image.jpg' with your image path */
+           background-size: cover;
+           background-position: center;
+}
+        
+        .container {
+            max-width: 1200px; /* Adjusted max-width */
+            text-align: center;
+            padding: 50px;
+            border-radius: 20px; /* Add some border-radius for a rounded look */
+            color: #2b2828; /* Changed color property */
+        }
+        h2 {
+            margin-bottom: 40px;
+            font-size: xx-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+        }
+        .card {
+            width: 300px; /* Adjusted card width */
+            margin: 0 20px; /* Added margin for spacing */
+        }
+        .card img {
+            height: 200px; /* Adjusted image height */
+            object-fit: cover; /* Ensure images cover the whole area */
+        }
+        .btn {
+            width: 100%; /* Make buttons fill the width of the card */
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .btn:last-child {
+            margin-right: 0; /* Remove margin from last button */
+        }
+        .btn-danger {
+            width: 100%; /* Make logout button fill the width of the card */
+        }
+    

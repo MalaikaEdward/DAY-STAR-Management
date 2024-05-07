@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(
+      content="width=device-width, initial-scale=1.0" 
+      name="viewport"
+      )
+    title Login Page
+    link(
+      href="/css/admin2.css" 
+      rel="stylesheet"
+      )
+  body
+    .navbar(w3-include-html="/include-navbar/navbar.html")
+    // Centering the login form
+    .container
+      #login
+        .login-form-container
+          form#login-form.login-form(
+            method="POST" 
+            action="/login"
+            )
+            // Title of the form
+            h3.form-title ADMIN LOGIN
+            // Username input field
+            .form-group
+              label.form-label(for="username") Username:
+              input#usrname.form-control(
+                name="username" 
+                type="text"
+                )
+            // Password input field
+            .form-group
+              label.form-label(for="password") Password:
+              input#passwordd.form-control(
+                name="security key" 
+                type="password"
+                )
+            // Remember me checkbox
+            .form-group
+              label.form-label(for="remember-me")
+                input#remember-me(
+                  type="checkbox" 
+                  name="remember-me"
+                  )
+                | Remember me
+            // Submit button
+            button.btn(type="submit") Login
+  // Next arrow button
+  // You can customize the icon for the arrow button as needed
+  a(href="/general register/login.html")
+    button.next-arrow(onclick="scrollToTop()") ▲
+    .footer 2024 DayStar. All Rights Reserved.
+    // Including any additional scripts
+    script(src="/admin/admin3.js")
+    script(src="/CSS/bootstrap-5.3.3-dist/js/bootstrap.js")
+script(src="/include-navbar/include.js")
+
+// Correctly indented anchor tag
+a(href="/general register/login.html")

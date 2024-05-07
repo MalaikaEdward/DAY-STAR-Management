@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/user/admindashboard/dash.css" class="">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">ADMIN DASHBOARD</h2>
+        
+        <!-- Card Container -->
+        <div class="d-flex justify-content-center flex-wrap"> <!-- Adjusted to flex to make cards align horizontally -->
+            <!-- Card 1: Register Child -->
+            <div class="card mb-4">
+                <img src="/images/images/fals.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Register Child</h5>
+                    <p class="card-text">Register a new child into the system.</p>
+                    <a href="/Babyregister/baby.html" class="btn btn-primary">Register Child</a>
+                </div>
+            </div>
+
+            <!-- Card 2: Babysitters -->
+            <div class="card mb-4">
+                <img src="/images/images/DH.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Babysitters</h5>
+                    <p class="card-text">Access and manage babysitters.</p>
+                    <a href="/Babysitters/sitterlogin.html" class="btn btn-primary">Babysitters</a>
+                </div>
+            </div>
+
+            <!-- Card 3: Daily Attendances -->
+            <div class="card mb-4">
+                <img src="/images/images/fxx.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Daily Attendances</h5>
+                    <p class="card-text">Manage daily attendances.</p>
+                    <a href="/dailyattendences/daily.html" class="btn btn-primary">Daily Attendances</a>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <div class="card mb-4">
+                <button id="logoutBtn" class="btn btn-danger">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/general register/form.js"></script>
+</body>
+</html>

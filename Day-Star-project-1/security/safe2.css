@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Set background image */
+    background-image: url('/images/images/ccr.jpg');
+    /* Adjust background properties */
+    background-size: cover;
+    background-position: center;
+    /* Add any additional styles */
+    /* For example: */
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgb(from color r g b);
+}
+h1 {
+    text-align: center;
+    color: #070706;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    color: #020401;
+    font-size: large;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #b21818;
+}
+textarea {
+    resize: none;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6200;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #afc8e4;
+}
+.qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+    font-size: x-large;
+    font-weight: bolder;
+    font-display: 40% ;
+}
+#qr-code-img {
+    max-width: 200px;
+}

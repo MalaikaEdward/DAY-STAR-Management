@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(
+      content="width=device-width, initial-scale=1.0" 
+      name="viewport"
+      )
+    title navbar
+    // Bootstrap CSS
+    link(
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      )
+  body
+    // Navbar
+    nav.navbar.navbar-expand-lg.bg-body-tertiary
+      .container-fluid
+        a.navbar-brand(href="#") DAYSTAR
+        button.navbar-toggler(
+          aria-label="Toggle navigation" 
+          aria-expanded="false" 
+          aria-controls="navbarSupportedContent" 
+          data-bs-target="#navbarSupportedContent" 
+          data-bs-toggle="collapse" 
+          type="button"
+          )
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(
+                href="/index.html" 
+                aria-current="page"
+                ) HOME
+            li.nav-item
+              a.nav-link(href="/general register/login.html") PAGES
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(
+                aria-expanded="false" 
+                data-bs-toggle="dropdown" 
+                role="button" 
+                href="#"
+                ) Dropdown
+              ul.dropdown-menu
+                li
+                  a.dropdown-item(href="#") BLOG
+                li
+                  a.dropdown-item(href="#") EVENT
+                li
+                  hr.dropdown-divider
+                li
+                  a.dropdown-item(href="#") PROGRAMS
+            li.nav-item
+              a.nav-link.disabled(aria-disabled="true") CONTACTS
+          form.d-flex(role="search")
+            input.form-control.me-2(
+              aria-label="Search" 
+              placeholder="Search" 
+              type="search"
+              )
+            button.btn.btn-outline-success(type="submit") Search
+          // Logout Button
+          button.btn.btn-outline-danger.ml-2(onclick="logout()") Logout
+    // Your page content goes here
+    // Bootstrap JS and dependencies
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+    script.
+      function logout() {
+        // Add logout functionality here
+        // For example, redirect to logout page or perform logout AJAX request
+        alert('Logged out successfully');
+        }

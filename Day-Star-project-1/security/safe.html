@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindergarten School Security Form</title>
+    <link rel="stylesheet" href="/security/safe2.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Kindergarten School Security Form</h1>
+        <form id="security-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="qr-code-container">
+            <h2>Scan QR Code for Check-in</h2>
+            <img src="/images/images/adobe-express-qr-code.png" id="qr-code-img" alt="QR Code">
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
