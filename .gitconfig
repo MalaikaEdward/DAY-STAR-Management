@@ -1,0 +1,9 @@
+[user]
+	name = MalaikaEdward
+	email = 156460174+MalaikaEdward@users.noreply.github.com
+	enail = remmymalaika@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
