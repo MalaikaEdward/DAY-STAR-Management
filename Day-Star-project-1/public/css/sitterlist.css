@@ -1,0 +1,55 @@
+/* Overall Page Layout */
+body {
+    font-family: Arial, sans-serif; /* Choose a font that suits your design */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+}
+
+.container {
+    max-width: 1200px; /* Adjust based on your preference */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Black shadow */
+}
+
+.table th,.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #4a148c; /* Purple background */
+    color: white; /* White text */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Lighter shade for even rows */
+}
+
+/* Footer Styling */
+.footer {
+    position: fixed; /* Fix the footer at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4a148c; /* Purple background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Portrait Background */
+.portrait {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+}

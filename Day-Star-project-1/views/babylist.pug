@@ -14,7 +14,7 @@ html(lang="en")
   body
     .container
       h2 Baby Register Details
-      table.table
+      table.table.table-striped 
         thead
           tr
             th(scope="col") Baby's Name
@@ -25,7 +25,7 @@ html(lang="en")
             th(scope="col") Fee Paid (UGX)
             th(scope="col") Period of Stay
             th(scope="col") Child Number
-            th(scope="col") Location
+            th(scope="col") Location            
             th(scope="col") Delete
             th(scope="col") Update  
 
@@ -43,7 +43,9 @@ html(lang="en")
             td #{baby.babychildNumber}
             td #{baby.address} 
             td
-              a.btn.btn-danger.btn-sm(href="/delete") Delete 
+              form(methode="POST" action="/delete")
+                input(type="hidden", name="id" value="baby._id")
+                button.btn.btn-danger.btn-sm(href="/delete") Delete 
             td   
               a.btn.btn-primary.btn-sm(href="/babiesupdate/"+ baby._id) Update
 

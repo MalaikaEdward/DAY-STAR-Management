@@ -3,12 +3,12 @@ const router = express.Router();
 
 //import model
 const Baby = require("../models/Registration");
-const { post } = require("./sitterRoutes");
+const settles = require("../models/settles");
+const babyCheckIn = require("../models/BabyCheckInOut")
 router.get("/register", (req, res) => {
   res.render("registerbaby");
 });
 //post route
-
 router.post("/register", async (req, res) => {
   try {
     const baby = new Baby(req.body);
@@ -49,12 +49,11 @@ router.post("/delete", async (req, res) => {
 });
 
 // PUT API to update baby details
-router.put("/babiesupdate/:id", async (req, res) => {
+router.get("/babiesupdate/:id", async (req, res) => {
   try {
      // Find the baby by ID and update it
-    const babyUpdate = await Baby.findOne({_id: req.params.id});
-    res.render("babiesUpdate", {baby:babyUpdate})
-
+    let baby = await Baby.findById(req.params.id);
+    res.render("babiesUpdate", { baby: baby });
 
   } catch (error) {
     console.log("error finding a baby!", error)
@@ -64,11 +63,42 @@ router.put("/babiesupdate/:id", async (req, res) => {
 
 router.post("/babiesupdate", async(req, res)=> {
   try{
-    await Baby.findOneAndUpdate({_id: req.query}, req.body);
+    await Baby.findOneAndUpdate({_id: req.query.id}, req.body, {
+      new: true,
+    });
     res.redirect("/babylist")
   } catch (error) {
     res.status(404).send("unable to update baby in the db!");
   }
-})
+});
+
+// clockin baby route for form 
+router.get("/babyCheckIn/:id", async (req, res) => {
+  try {
+    const Baby = await babyCheckIn.find();
+    const babyCleckIn = await Baby.findOne({ _id: req.params.id });
+    res.render("checkin", {
+      baby: babyCleckIn,
+      babies: babies  
+    });
+  } catch (error) {
+    console.log("Error finding baby:", error);
+    res.status(400).send("Unable to find baby from database");
+  }
+});
+
+router.post("/babyCheckIn", async (req, res) => {
+  try {
+    await babyCheckIn.findOneAndUpdate({ _id: req.query.id }, req.body);
+    res.redirect("/babylist");
+  } catch (error) {
+    console.log("Error updating baby:", error);
+    res.status(404).send("Unable to update baby");
+  }
+});
+
+// router.get("/babycheckin", (req, res) =>{
+//   res.render("babycheck");
+// });
 
 module.exports = router;

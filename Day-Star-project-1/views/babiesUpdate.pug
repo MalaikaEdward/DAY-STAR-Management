@@ -16,12 +16,12 @@ html(lang="en")
       h2 Baby Register form
       form(
         method="POST" 
-        action="/babiesupdate?id='+baby._id"
+        action='/babiesupdate?id='+baby._id
         )
         .form-group
           label(for="name") Baby's Name:
           input#name(
-            name="babyName" 
+            name="name" 
             type="text"
             value=baby.name
             )

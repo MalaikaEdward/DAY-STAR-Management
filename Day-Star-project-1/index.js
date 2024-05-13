@@ -17,10 +17,13 @@ const Administer = require("./models/Administer")
 
 //importing routes
  const registerBabyRoutes = require("./routes/registerbabyRoutes");
-//  const adminloginRoutes = require("./routes/authenticationRouters");
+ const adminloginRoutes = require("./routes/adminloginRoutes");
  const admindashboardRoutes = require("./routes/admindashboardRoutes");
  const adminregisterRoutes = require("./routes/adminregisterRoutes");
- const sitterRoutes = require("./routes/sitterRoutes")
+ const sitterRoutes = require("./routes/sitterRoutes");
+ const landingRoutes = require("./routes/landingRoutes");
+ const blogRoutes = require("./routes/blogRoutes")
+ const aboutRoutes = require("./routes/aboutRoutes")
 // instantiations
 const app = express();
 
@@ -63,10 +66,13 @@ passport.deserializeUser(Administer.deserializeUser());
 
 //use imported routes
 app.use("/", registerBabyRoutes);
-// app.use("/", adminloginRoutes);
+app.use("/", adminloginRoutes);
 app.use("/", admindashboardRoutes)
 app.use("/", adminregisterRoutes )
 app.use("/", sitterRoutes)
+app.use("/", landingRoutes)
+app.use("/", blogRoutes)
+app.use("/", aboutRoutes)
 
 // app.get("/parentlogin", (req, res)=>{
   // res.render(parentlogin-parent)

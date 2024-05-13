@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Sitters Form
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css")
+    link(href="/css/sitterlist", rel="stylesheet")
+  body
+    .container
+      h2 Sitters List
+      table.table
+        thead
+          tr
+            th Full Name
+            th Gender
+            th Email
+            th Phone Number
+            th Address
+            th Availability
+            th Level of Education
+            th Experience
+            th Update
+            th Delete
+        tbody
+          each sitter in sitters
+            tr
+              td #{sitter.fullName}
+              td #{sitter.gender}
+              td #{sitter.email}
+              td #{sitter.phonenumber}
+              td #{sitter.currentAddress} 
+              td #{sitter.Availability}  
+              td #{sitter.levelOfEducation} 
+              td #{sitter.Experience}  
+              td
+                a.btn.btn-primary.btn-sm(href="/sittersupdate/"+ sitter._id) Update
+              td
+                form(method="POST" action="/sitterdelete")
+                   input(type="hidden" name="id" value=sitter._id)
+                   button.btn.btn-danger.btn-sm(type="submit") Delete 
+      br
+    footer.footer
+      div
+        p Daystar Management 2024
+      div(class="portrait")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js")
+    script(src="/Babysitters/occupy.js")

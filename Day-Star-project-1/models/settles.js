@@ -6,33 +6,41 @@ const settlesSchema = new mongoose.Schema({
    type:String,
    trim:true  
   },
-
-  emailAddress:{
+  gender:{
     type:String,
     trim:true  
   },
 
-  phoneNumber:{
+  email:{
     type:String,
     trim:true  
   },
 
-  address:{
+  phonenumber:{
     type:String,
     trim:true  
   },
 
-  experience:{
+  currentAddress:{
+    type:String,
+    trim:true  
+  },
+
+  Availability:{
+    type:String,
+    trim:true  
+  },
+
+  levelOfEducation:{
     type:String,
     trim:true  
   }, 
 
-  availability:{
+  Experience:{
     type:String,
     trim:true  
   }
 
-
-})
+});
 
 module.exports = mongoose.model("settles", settlesSchema)

@@ -1,12 +1,11 @@
-const { text } = require("express");
+// const { text } = require("express");
 const mongoose = require("mongoose");
 //Access the schema in mongoose function 
-const schema = mongoose.schema;
+// const schema = mongoose.schema;
 
-const babyschema = new mongoose.Schema({
+const babySchema = new mongoose.Schema({
     name:{
-      type:String,
-      
+      type:String, 
       trim:true  
     },
     age:{
@@ -41,8 +40,6 @@ const babyschema = new mongoose.Schema({
         type:String,
         trim:true   
     }
-    
-
 });
 
-module.exports = mongoose.model("Baby", babyschema)
+module.exports = mongoose.model("Baby", babySchema)

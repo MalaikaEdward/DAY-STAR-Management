@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('/images/images/ron.jpg'); /* Replace 'background_image.jpg' with your image path */
+    background-color: rgb(160, 236, 223) ; /* Replace 'background_image.jpg' with your image path */
     background-size: cover;
 }
 

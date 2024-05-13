@@ -1,5 +1,11 @@
 /* Add your custom styles here */
-
+  body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(232, 238, 217) ; /* Replace 'background_image.jpg' with your image path */
+   background-size: cover;
+  }
 
   .footer {
     position: fixed;

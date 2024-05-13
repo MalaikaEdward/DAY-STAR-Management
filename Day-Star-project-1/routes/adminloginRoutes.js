@@ -11,9 +11,11 @@ router.get ("/login", (req, res)=> {
 router.post("/login", passport.authenticate("local",{failureRedirect:"/login"}), (req, res)=> {
     req.session.user = req.user
     console.log(req.body)
-    if (req.user.role ==="admin") {
+ 
+   if (req.user.role ==="admin") {
         res.redirect("/babylist")   
     } else if(error){
+        console.log("failed to login")
         return res.status(500).send("Error logging in..")   
     }
   

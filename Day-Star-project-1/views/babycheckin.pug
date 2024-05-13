@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Daycare Check-in Form
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css")
+  body
+    .container
+      h1.text-center.mt-5 Daycare Check-in Form
+      form(action="/babycheckin" method="POST" class="mt-5")
+        .mb-3
+          label(for="childName" class="form-label") Child's Name
+          input(type="text" class="form-control" id="childName" placeholder="Enter child's name" name="childName")
+        .mb-3
+          label(for="personBrought" class="form-label") Person who Brought
+          input(type="text" class="form-control" id="personBrought" placeholder="Enter Person who Brought" name="personBrought")
+        .mb-3
+          label(for="contactBrought" class="form-label") Cantact
+          input(type="text" class="form-control" id="contactBrought" placeholder="Enter Contact" name="contactBrought")
+        .mb-3
+          label(for="periodOfStay" class="form-label") Period of Stay
+          input(type="text" class="form-control" id="periodOfStay" placeholder="Enter Period of Stay" name="periodOfStay")
+        .mb-3
+          label(for="assignSitter" class="form-label") Assign Sittter
+          input(type="text" class="form-control" id="assignSitter" name="assignSitter") 
+          button.btn.btn.(href="", type="button") Check In

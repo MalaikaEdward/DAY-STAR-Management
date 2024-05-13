@@ -18,47 +18,66 @@ html(lang="en")
           .card
             .card-header
               h3.text-center Daycare Sitter Registration
-              form(
-        method="POST" 
-        action="/Reg"
-        )
             .card-body
-              form
-                .mb-3
+              form(method="POST" action="/Reg")
+               .mb-3
                   label.form-label(for="fullName") Full Name
                   input#fullName.form-control( 
-                    placeholder="fullName" 
+                    placeholder="fullName"
+                    name="fullName" 
                     type="text"
                     )
-                .mb-3
+               .mb-3
+                  label.form-label(for="gender") Gender
+                  select#gender.form-control( 
+                    placeholder="gender"
+                    name="gender" 
+                    type="text"
+                    )
+                    option(value="")  Select Gender
+                    option(value="male")  Male
+                    option(value="female")  Female 
+               .mb-3
                   label.form-label(for="email") Email address
                   input#email.form-control(
-                    placeholder="emailAddress" 
+                    placeholder="emailAddress"
+                    name="email" 
                     type="email"
                     )
-                .mb-3
+               .mb-3
                   label.form-label(for="phone") Phone Number
                   input#phone.form-control(
-                    placeholder="phoneNumber" 
+                    placeholder="phoneNumber"
+                    name="phonenumber" 
                     type="tel"
                     )
-                .mb-3
+               .mb-3
                   label.form-label(for="address") Address
                   input#address.form-control( 
-                    placeholder="address" 
+                    placeholder="address"
+                    name="currentAddress" 
                     type="text"
                     )
-                .mb-3
-                  label.form-label(for="experience") Experience
-                  textarea#experience.form-control(
-                    placeholder="experience" 
-                    rows="3"
-                    )
-                .mb-3
+               .mb-3
                   label.form-label(for="availability") Availability
                   input#availability.form-control( 
-                    placeholder="availability" 
+                    placeholder="availability"
+                    name="Availability" 
                     type="text"
                     )
-                .text-center
+               .mb-3
+                  label.form-label(for="level of Education") Level Of Education
+                  input#levelofEducation.form-control(
+                    placeholder="levelofEducation"
+                    name="levelOfEducation" 
+                    rows="3"
+                    )    
+               .mb-3
+                  label.form-label(for="experience") Experience
+                  input#experience.form-control(
+                    placeholder="experience"
+                    name="Experience" 
+                    rows="3"
+                    )    
+  
                   button.btn.btn-primary(type="submit") Submit
